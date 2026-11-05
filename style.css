@@ -3,12 +3,12 @@
 }
 
 :root {
-  /* Variables de Color */
-  --color-primario: #007bff;
-  --color-secundario: #28a745;
-  --color-fondo-principal: #f8f9fa;
-  --color-fondo-tarjeta: #ffffff;
-  --color-texto: #333333;
+  /* Variables de Color (Paleta Actualizada) */
+  --color-primario: #4f46e5; /* Azul índigo moderno */
+  --color-secundario: #10b981; /* Esmeralda vibrante */
+  --color-fondo-principal: #f3f4f6; /* Gris claro neutro */
+  --color-fondo-tarjeta: #ffffff; /* Blanco puro */
+  --color-texto: #1f2937; /* Gris oscuro para lectura */
 
   /* Variables de Tipografía */
   --fuente-principal: "Inter", sans-serif;
@@ -22,6 +22,7 @@
 body {
   font-family: var(--fuente-principal);
   color: var(--color-texto);
+  background-color: var(--color-fondo-principal);
 }
 
 header {
@@ -34,18 +35,18 @@ header {
 }
 
 main {
-  background-color: #e9ecef;
+  background-color: #e5e7eb;
   padding: var(--espaciado-grande);
 }
 
 aside {
-  background-color: #dee2e6;
+  background-color: #d1d5db;
   padding: var(--espaciado-grande);
   margin-top: var(--espaciado-medio);
 }
 
 footer {
-  background-color: #ced4da;
+  background-color: #9ca3af;
   padding: var(--espaciado-grande);
   margin-top: var(--espaciado-medio);
 }
@@ -59,15 +60,15 @@ aside ul li a {
 }
 
 footer ul li a {
-  color: #6c757d;
+  color: #4b5563;
 }
 
 #btn-destacado {
-  color: purple; /* El ID gana por mayor peso a pesar de estar arriba */
+  color: purple;
 }
 
 .btn-comprar {
-  color: orange; /* Pierde ante la especificidad del ID */
+  color: orange;
 }
 
 .btn-comprar {
@@ -78,6 +79,7 @@ footer ul li a {
   border-radius: 4px;
   display: inline-block;
 }
+
 article {
   background-color: var(--color-fondo-tarjeta);
   padding: var(--espaciado-grande);
