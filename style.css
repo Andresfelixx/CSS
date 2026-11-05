@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  /* Variables de Color */
+  --color-primario: #007bff;
+  --color-secundario: #28a745;
+  --color-fondo-principal: #f8f9fa;
+  --color-fondo-tarjeta: #ffffff;
+  --color-texto: #333333;
+
+  /* Variables de Tipografía */
+  --fuente-principal: "Inter", sans-serif;
+
+  /* Variables de Espaciado (Box Model) */
+  --espaciado-pequeno: 8px;
+  --espaciado-medio: 16px;
+  --espaciado-grande: 24px;
+}
+
 body {
   font-family: sans-serif;
   color: #333333;
