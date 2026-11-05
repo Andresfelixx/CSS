@@ -8,7 +8,10 @@ body {
 }
 
 header {
-  background-color: #f8f9fa;
+  background-image: url("tu-imagen.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 main {
