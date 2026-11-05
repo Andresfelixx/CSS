@@ -20,8 +20,8 @@
 }
 
 body {
-  font-family: sans-serif;
-  color: #333333;
+  font-family: var(--fuente-principal);
+  color: var(--color-texto);
 }
 
 header {
