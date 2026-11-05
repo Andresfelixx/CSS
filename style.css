@@ -73,6 +73,7 @@ footer ul li a {
   display: inline-block;
 }
 article {
-  padding: 20px;
-  margin: 15px;
+  background-color: var(--color-fondo-tarjeta);
+  padding: var(--espaciado-grande);
+  margin: var(--espaciado-medio);
 }
