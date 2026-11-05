@@ -14,3 +14,11 @@ aside ul li a {
 footer ul li a {
   color: #6c757d;
 }
+
+#btn-destacado {
+  color: purple; /* El ID gana por mayor peso a pesar de estar arriba */
+}
+
+.btn-comprar {
+  color: orange; /* Pierde ante la especificidad del ID */
+}
