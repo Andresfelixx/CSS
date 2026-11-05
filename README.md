@@ -26,7 +26,7 @@ _Nota:_ Se evita el uso de IDs para estilos y la regla `!important` para mantene
 ## Hallazgos: Centralización de Identidad Visual y Espaciado
 
 1. **La lista completa de variables declaradas:**
-   - **Colores:** `--color-primario` (#007bff), `--color-secundario` (#28a745), `--color-fondo-principal` (#f8f9fa), `--color-fondo-tarjeta` (#ffffff) y `--color-texto` (#333333).
+   - **Colores:** `--color-primario` (#4f46e5), `--color-secundario` (#10b981), `--color-fondo-principal` (#f3f4f6), `--color-fondo-tarjeta` (#ffffff) y `--color-texto` (#1f2937).
    - **Tipografía:** `--fuente-principal` ('Inter', sans-serif).
    - **Espaciado:** `--espaciado-pequeno` (8px), `--espaciado-medio` (16px) y `--espaciado-grande` (24px).
 
