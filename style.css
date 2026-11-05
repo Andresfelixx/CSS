@@ -51,3 +51,6 @@ footer ul li a {
   border-radius: 4px;
   display: inline-block;
 }
+article {
+  padding: 20px;
+}
