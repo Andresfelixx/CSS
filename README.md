@@ -22,3 +22,16 @@ _Nota:_ Se evita el uso de IDs para estilos y la regla `!important` para mantene
 
 3. **Cómo se ven afectados los elementos hermanos cuando le aplicas un margen grande a uno de ellos:**
    Los elementos hermanos se empujan y se alejan manteniendo la distancia configurada. Además, los márgenes verticales de elementos adyacentes pueden fusionarse en un fenómeno conocido como _margin collapsing_ (colapso de márgenes), donde el espacio entre ellos no se suma, sino que toma el valor del margen más grande.
+
+## Hallazgos: Centralización de Identidad Visual y Espaciado
+
+1. **La lista completa de variables declaradas:**
+   - **Colores:** `--color-primario` (#007bff), `--color-secundario` (#28a745), `--color-fondo-principal` (#f8f9fa), `--color-fondo-tarjeta` (#ffffff) y `--color-texto` (#333333).
+   - **Tipografía:** `--fuente-principal` ('Inter', sans-serif).
+   - **Espaciado:** `--espaciado-pequeno` (8px), `--espaciado-medio` (16px) y `--espaciado-grande` (24px).
+
+2. **La ventaja de reutilizar medidas de margen y relleno:**
+   Permite mantener una consistencia visual estricta en toda la interfaz sin depender de valores arbitrarios. Si en el futuro se requiere ajustar el espaciado global, solo es necesario modificar el valor en el `:root` en lugar de buscar y cambiar cada selector de manera individual.
+
+3. **De qué manera la centralización en `:root` previene colisiones visuales:**
+   Al depender de una fuente única de verdad para los tokens de diseño, se evitan inconsistencias accidentales, facilitando el mantenimiento y garantizando la armonía y escala visual a medida que la hoja de estilos crece y se agregan nuevos componentes.
