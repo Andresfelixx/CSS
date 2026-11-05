@@ -35,3 +35,15 @@ _Nota:_ Se evita el uso de IDs para estilos y la regla `!important` para mantene
 
 3. **De qué manera la centralización en `:root` previene colisiones visuales:**
    Al depender de una fuente única de verdad para los tokens de diseño, se evitan inconsistencias accidentales, facilitando el mantenimiento y garantizando la armonía y escala visual a medida que la hoja de estilos crece y se agregan nuevos componentes.
+
+## Hallazgos: Pseudoclases y Pseudoelementos
+
+1. **La diferencia funcional entre una pseudoclase y un pseudoelemento:**
+   - **Pseudoclase (Ej. `:hover`, `:focus`):** Su función principal es reaccionar a estados o eventos dinámicos de un elemento existente en el DOM, definiendo cómo debe comportarse o lucir cuando el usuario interactúa con él o según su posición en el árbol.
+   - **Pseudoelemento (Ej. `::before`, `::after`):** Su propósito es inyectar contenido y estilizar partes específicas de un elemento sin alterar el marcado HTML original, creando nodos virtuales que el navegador renderiza a nivel visual.
+
+2. **La importancia técnica de la pseudoclase `:focus` para cumplir con buenas prácticas de accesibilidad web:**
+   - Permite a los usuarios que dependen del teclado (tecla `Tab`) o de tecnologías de asistencia identificar de manera clara e inequívoca qué elemento interactivo tiene el foco actual (botones, enlaces, campos de formulario). Previene la desorientación y garantiza una experiencia inclusiva y conforme a los estándares WCAG.
+
+3. **Por qué es una buena práctica inyectar elementos decorativos (como etiquetas de oferta o iconos) desde CSS con `::before`/`::after` en lugar de ensuciar el archivo HTML con etiquetas vacías:**
+   - Permite mantener un HTML semántico y limpio, separando por completo la presentación del contenido estructurado. Además, facilita un mantenimiento escalable, ya que cualquier modificación o eliminación de un elemento decorativo se centraliza directamente en la hoja de estilos.
