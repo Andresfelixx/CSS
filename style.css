@@ -7,6 +7,22 @@ body {
   color: #333333;
 }
 
+header {
+  background-color: #f8f9fa;
+}
+
+main {
+  background-color: #e9ecef;
+}
+
+aside {
+  background-color: #dee2e6;
+}
+
+footer {
+  background-color: #ced4da;
+}
+
 header nav ul li a {
   color: #007bff;
 }
