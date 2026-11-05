@@ -30,18 +30,24 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-color: var(--color-fondo-principal);
+  padding: var(--espaciado-grande);
 }
 
 main {
   background-color: #e9ecef;
+  padding: var(--espaciado-grande);
 }
 
 aside {
   background-color: #dee2e6;
+  padding: var(--espaciado-grande);
+  margin-top: var(--espaciado-medio);
 }
 
 footer {
   background-color: #ced4da;
+  padding: var(--espaciado-grande);
+  margin-top: var(--espaciado-medio);
 }
 
 header nav ul li a {
