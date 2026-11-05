@@ -2,3 +2,15 @@ body {
   font-family: sans-serif;
   color: #333333;
 }
+
+header nav ul li a {
+  color: #007bff;
+}
+
+aside ul li a {
+  color: #28a745;
+}
+
+footer ul li a {
+  color: #6c757d;
+}
