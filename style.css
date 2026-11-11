@@ -3,17 +3,14 @@
 }
 
 :root {
-  /* Variables de Color (Paleta Actualizada) */
-  --color-primario: #4f46e5; /* Azul índigo moderno */
-  --color-secundario: #10b981; /* Esmeralda vibrante */
-  --color-fondo-principal: #f3f4f6; /* Gris claro neutro */
-  --color-fondo-tarjeta: #ffffff; /* Blanco puro */
-  --color-texto: #1f2937; /* Gris oscuro para lectura */
+  --color-primario: #4f46e5;
+  --color-secundario: #10b981;
+  --color-fondo-principal: #f3f4f6;
+  --color-fondo-tarjeta: #ffffff;
+  --color-texto: #1f2937;
 
-  /* Variables de Tipografía */
   --fuente-principal: "Inter", sans-serif;
 
-  /* Variables de Espaciado (Box Model) */
   --espaciado-pequeno: 8px;
   --espaciado-medio: 16px;
   --espaciado-grande: 24px;
