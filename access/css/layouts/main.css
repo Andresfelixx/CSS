@@ -1,4 +1,4 @@
-@import url('../componets/article.css');
+@import url('../componets/card.css');
 main {
   background-color: #e5e7eb;
   padding: var(--espaciado-grande);

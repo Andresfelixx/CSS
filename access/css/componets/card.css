@@ -1,0 +1,57 @@
+.card {
+  background-color: var(--color-fondo-tarjeta);
+  padding: var(--espaciado-grande);
+  margin: var(--espaciado-medio);
+}
+
+.card--destacada h2::after {
+  content: "Nuevo";
+  font-size: 12px;
+  padding: 10px;
+  background-color: var(--color-primario);
+  color: var(--color-fondo-principal);
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.card__titulo, .card__descripcion, .card__precio{
+  font-weight: normal;
+}
+
+.titulo--destacado, .descripcion--destacada, .precio--destacado{
+  font-weight: bold;
+}
+
+.card__btnComprar{
+  color: orange;
+}
+
+.card__btnComprar{
+  color: #ffffff;
+  background-color: var(--color-primario);
+  padding: var(--espaciado-pequeno) var(--espaciado-medio);
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btn--secundario{
+  color: #ffffff;
+  background-color: var(--color-secundario);
+  padding: var(--espaciado-pequeno) var(--espaciado-medio);
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btn-comprar:hover {
+  background-color: #554fc1;
+}
+
+.btn-comprar:active {
+  background-color: #9c9bb9;
+}
+
+.btn--secundario:hover{
+  background-color: #097e57;
+}

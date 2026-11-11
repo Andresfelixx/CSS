@@ -7,6 +7,7 @@ header {
   padding: var(--espaciado-grande);
 }
 
-header nav ul li a {
-  color: var(--color-primario);
+header nav ul a {
+  color: #fff;
+  margin: 4px;
 }
