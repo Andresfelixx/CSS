@@ -1,0 +1,22 @@
+aside {
+  background-color: #d1d5db;
+  padding: var(--espaciado-grande);
+  margin-top: var(--espaciado-medio);
+}
+
+aside:hover {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+aside::before {
+  content: "• ";
+}
+
+aside a:focus {
+  outline: 2px solid var(--color-secundario);
+}
+
+aside ul li a {
+  color: var(--color-secundario);
+}

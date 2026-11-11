@@ -1,0 +1,39 @@
+article {
+  background-color: var(--color-fondo-tarjeta);
+  padding: var(--espaciado-grande);
+  margin: var(--espaciado-medio);
+}
+
+article .btn-comprar:hover {
+  background-color: #554fc1;
+}
+
+article .btn-comprar:active {
+  background-color: #9c9bb9;
+}
+
+article h2::after {
+  content: "Nuevo";
+  font-size: 12px;
+  padding: 10px;
+  background-color: var(--color-primario);
+  color: var(--color-fondo-principal);
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.btn-comprar {
+  color: orange;
+}
+
+.btn-comprar {
+  color: #ffffff;
+  background-color: var(--color-primario);
+  padding: var(--espaciado-pequeno) var(--espaciado-medio);
+  text-decoration: none;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#btn-destacado {
+  color: purple;
+}
