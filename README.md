@@ -47,3 +47,20 @@ _Nota:_ Se evita el uso de IDs para estilos y la regla `!important` para mantene
 
 3. **Por qué es una buena práctica inyectar elementos decorativos (como etiquetas de oferta o iconos) desde CSS con `::before`/`::after` en lugar de ensuciar el archivo HTML con etiquetas vacías:**
    - Permite mantener un HTML semántico y limpio, separando por completo la presentación del contenido estructurado. Además, facilita un mantenimiento escalable, ya que cualquier modificación o eliminación de un elemento decorativo se centraliza directamente en la hoja de estilos.
+
+## Hallazgos: Arquitectura BEM y Modularidad
+
+1. **Qué significa la sigla BEM y cómo se escribe visualmente:**
+   - **BEM** responde a la nomenclatura de **Bloque, Elemento y Modificador** (*Block, Element, Modifier*). Su objetivo es estructurar el código CSS mediante clases predecibles y desacopladas.
+   - **Sintaxis visual:** Se compone utilizando un bloque base, doble guion bajo (`__`) para conectar los elementos internos y doble guion medio (`--`) para los modificadores o variantes de estado. Por ejemplo:
+     ```css
+     .tarjeta { }
+     .tarjeta__titulo { }
+     .tarjeta--destacada { }
+     ```
+
+2. **Por qué dividir el CSS en varios archivos facilita el trabajo colaborativo:**
+   - Permite organizar el código de manera modular (por ejemplo, un archivo independiente por cada componente dentro de una estructura de carpetas). Al trabajar en equipo mediante Git, esto reduce drásticamente los conflictos de *merge*, ya que cada desarrollador puede modificar los estilos del componente específico en el que está trabajando sin colisionar con el archivo monolítico de sus compañeros.
+
+3. **Cómo esta metodología evita la guerra de especificidad (Cascada) al mantener un peso plano:**
+   - BEM elimina el uso de selectores anidados complejos (como `.menu ul li a`) o el abuso de IDs, manteniendo la especificidad uniforme y baja en todo el proyecto (un peso plano basado exclusivamente en clases de nivel único). De este modo, la cascada deja de ser un problema de pesos incontrolables y las reglas se aplican de forma predecible según su orden de declaración.
