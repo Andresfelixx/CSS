@@ -1,3 +1,26 @@
-footer ul li a {
+.footer{
+  width: 100%;
+  padding: var(--espaciado-medio);
+}
+
+.footer ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer ul a {
   color: #4b5563;
+}
+
+.footer .linkRed:nth-child(1){
+  color: #0000ff;
+}
+
+.footer .linkRed:nth-child(2){
+  color: #b225ce;
+}
+
+.footer .linkRed:nth-child(3){
+  color: #1783ca;
 }

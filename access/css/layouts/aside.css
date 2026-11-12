@@ -1,22 +1,32 @@
-aside {
-  background-color: #d1d5db;
-  padding: var(--espaciado-grande);
-  margin-top: var(--espaciado-medio);
-}
-
-aside:hover {
+.aside {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  width: 100%;
+  gap: var(--espaciado-grande);
   background-color: #1f2937;
   color: #fff;
+  padding: var(--espaciado-grande);
 }
 
-aside::before {
+.aside:hover {
+  background-color: #2d3b4e;
+}
+
+.aside::before {
   content: "• ";
 }
 
-aside a:focus {
+.aside a:focus {
   outline: 2px solid var(--color-secundario);
 }
 
-aside ul li a {
+.aside ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.aside ul a {
+  padding: var(--espaciado-pequeno);
   color: var(--color-secundario);
 }

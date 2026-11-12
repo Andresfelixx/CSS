@@ -1,5 +1,8 @@
 @import url('../componets/card.css');
+@import url('../componets/section.css');
+
 main {
+  width: 100%;
   background-color: #e5e7eb;
   padding: var(--espaciado-grande);
 }

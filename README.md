@@ -64,3 +64,14 @@ _Nota:_ Se evita el uso de IDs para estilos y la regla `!important` para mantene
 
 3. **Cómo esta metodología evita la guerra de especificidad (Cascada) al mantener un peso plano:**
    - BEM elimina el uso de selectores anidados complejos (como `.menu ul li a`) o el abuso de IDs, manteniendo la especificidad uniforme y baja en todo el proyecto (un peso plano basado exclusivamente en clases de nivel único). De este modo, la cascada deja de ser un problema de pesos incontrolables y las reglas se aplican de forma predecible según su orden de declaración.
+
+## Hallazgos: Arquitectura Total con Flexbox
+
+1. **Por qué fue crucial aplicar `min-height: 100vh` y `flex-direction: column` al contenedor global para controlar el pie de página:**
+   - Permite implementar de forma limpia el patrón de diseño conocido como *Sticky Footer* (pie de página anclado al fondo). Al establecer `min-height: 100vh`, nos aseguramos de que el contenedor principal ocupe al menos la altura total de la ventana gráfica (*viewport*). Al cambiar la dirección del flujo a columna con `flex-direction: column`, organizamos los elementos verticalmente; esto, combinado con el crecimiento flexible del contenido principal, empuja automáticamente el pie de página hacia el borde inferior de la pantalla incluso cuando la página tiene poco contenido.
+
+2. **Cómo la propiedad `gap` reemplazó el uso excesivo de márgenes laterales en los menús de navegación:**
+   - La propiedad `gap` simplifica y moderniza la distribución del espacio entre elementos flexibles. A diferencia de los márgenes tradicionales —que requerían aplicar separaciones individuales y lidiar con el elemento final usando selectores complejos como `:not(:last-child)`—, `gap` aplica el espaciado de manera uniforme y exclusiva *entre* los elementos adyacentes, sin afectar los bordes externos del contenedor. Esto reduce la cantidad de código, mejora la legibilidad y previene errores de diseño.
+
+3. **Cómo la unión de BEM, Custom Properties y Flexbox te permitió crear una tarjeta de producto resistente a diferentes longitudes de texto:**
+   - La metodología **BEM** (Block, Element, Modifier) aporta una arquitectura modular y predecible que facilita la estructuración limpia de los componentes de la tarjeta de producto sin problemas de especificidad. Las **Custom Properties** (variables CSS) centralizan los valores de diseño (como espaciados, colores y tamaños), garantizando consistencia. Por último, **Flexbox** gestiona la alineación y distribución interna de los elementos de forma fluida (por ejemplo, estirando o fijando los bloques para que el precio o el botón de compra queden alineados al fondo), logrando que la tarjeta se adapte perfectamente a títulos o descripciones de cualquier longitud sin romperse visualmente.

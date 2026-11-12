@@ -1,7 +1,18 @@
+.card__contenedor{
+  display: flex;
+  height: 100%; 
+  justify-content: center;
+  gap: var(--espaciado-pequeno);
+  padding: var(--espaciado-medio);
+  background-color: #f2f2f2;
+}
 .card {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  border-radius: 10px;
   background-color: var(--color-fondo-tarjeta);
   padding: var(--espaciado-grande);
-  margin: var(--espaciado-medio);
 }
 
 .card--destacada h2::after {
@@ -18,11 +29,24 @@
   font-weight: normal;
 }
 
+.card__body{
+  flex-grow: 1;
+}
+.card__precio:nth-child(2){
+  text-decoration:line-through;
+}
+.card__price-wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .titulo--destacado, .descripcion--destacada, .precio--destacado{
   font-weight: bold;
 }
 
 .card__btnComprar{
+  text-align: center;
   color: orange;
 }
 
@@ -44,14 +68,14 @@
   display: inline-block;
 }
 
-.btn-comprar:hover {
-  background-color: #554fc1;
-}
-
 .btn-comprar:active {
   background-color: #9c9bb9;
 }
 
 .btn--secundario:hover{
   background-color: #097e57;
+}
+
+.btn-comprar:hover {
+  background-color: #3e35dd;
 }
